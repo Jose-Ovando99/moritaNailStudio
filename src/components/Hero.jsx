@@ -37,7 +37,7 @@ function Hero() {
         </div>
       </div>
       <div className="px-8">
-        <p className="text-center text-2xl font-indie font-bold">Morita Nail Studio</p>
+        <p className="text-center text-2xl font-raleway font-bold">Morita Nail Studio</p>
         <p className="font-raleway text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit totam blanditiis iste exercitationem temporibus minus natus dignissimos aliquam minima eveniet sint nam repellat, perspiciatis, non dicta magnam. Quas, distinctio esse?</p>
       </div>
     </div>

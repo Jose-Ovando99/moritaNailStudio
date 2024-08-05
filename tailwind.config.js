@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
-        indie: ["Indie Flower", "cursive"],
+        fjalla: ["Fjalla One", "sans-serif"],
       }
     },
   },

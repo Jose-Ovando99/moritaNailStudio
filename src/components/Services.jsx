@@ -1,43 +1,48 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import ButtonService from "./ButtonService";
-import { textos } from "../constants/texts"
-
-
+import { textos as serviciosOfrecidos } from "../constants/texts";
+import { IconHeartFilled } from "@tabler/icons-react";
+// importacion de prueba
+import imagenPrueba from "../assets/moritaCover.jpg";
 
 function Services() {
   const [serviceDes, setServiceDes] = useState('manicuraSpa');
-  
-  let servicioName = textos[serviceDes]["servicio"];
-  let servicioDes = textos[serviceDes]["descripcion"];
-  let servicioPrecio = textos[serviceDes]["precio"];
+
+  const { servicio, descripcion, precio } = useMemo(() => {
+    const servicioData = serviciosOfrecidos[serviceDes] || {};
+    return {
+      servicio: servicioData.servicio,
+      descripcion: servicioData.descripcion,
+      precio: servicioData.precio
+    };
+  }, [serviceDes]);
 
   const actualizarServicio = (serviceSelect) => {
     setServiceDes(serviceSelect);
   };
 
-
   return (
     <div>
       <div className="flex flex-row flex-wrap mt-4 justify-center">
-        <ButtonService service={"manicuraCombinada"} handleClick={actualizarServicio}/>
-        <ButtonService service={"manicuraSpa"} handleClick={actualizarServicio}/>
-        <ButtonService service={"gelSemipermanente"} handleClick={actualizarServicio} />
-        <ButtonService service={"nivelacion"} handleClick={actualizarServicio} />
-        <ButtonService service={"banioAcrilico"} handleClick={actualizarServicio} />
-        <ButtonService service={"uniasAcrilicas"} handleClick={actualizarServicio} />
-        <ButtonService service={"uniasSoftGel"} handleClick={actualizarServicio} />
-        <ButtonService service={"esmaltadoPies"} handleClick={actualizarServicio} />
-        <ButtonService service={"pedicuraSeco"} handleClick={actualizarServicio} />
-        <ButtonService service={"pedicuraSpa"} handleClick={actualizarServicio} />
-        <ButtonService service={"pedicuraAdvance"} handleClick={actualizarServicio} />
+        {Object.keys(serviciosOfrecidos).map((service) => (
+          <ButtonService
+            key={service}
+            service={service}
+            handleClick={actualizarServicio}
+          />
+        ))}
       </div>
-      <section>
-        <p className="text-red-500">{servicioName}</p>
-        <p className="text-red-500">{servicioDes}</p>
-        <p className="text-red-500">{servicioPrecio}</p>
+      <section className="bg-pink-300 p-5 flex flex-col items-center justify-center font-raleway  text-slate-900">
+        <p className="text-3xl font-bold">{servicio}</p>
+        <img src={imagenPrueba} className="w-72" />
+        <p className="text-justify my-4">{descripcion}</p>
+        <div className="flex flex-row">
+          <IconHeartFilled />
+          <p className="border-2 rounded-full p-2 bg-purple-700 border-purple-700 text-slate-200">{precio}</p>
+        </div>
       </section>
     </div>
-  )
+  );
 }
 
 export default Services;

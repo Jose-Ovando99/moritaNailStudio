@@ -1,14 +1,14 @@
-const textos = {
+const serviciosOfrecidos = {
   // Servicios
   manicuraCombinada: {
     servicio: "Manicura Combinada",
-    descripcion: "Des",
-    precio: "$130"
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veilt totam blanditis iste excerciatiomem temporibus minus natus dignissismos aliquam minima evertir.",
+    precio: "Precio base: $130 (varía según el diseño)."
   },
   manicuraSpa: {
     servicio: "Manicura spa",
-    descripcion: "Des",
-    precio: "$150"
+    descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Veilt totam blanditis iste excerciatiomem temporibus minus natus dignissismos aliquam minima evertir.",
+    precio: "Precio fijo: $150"
   },
   gelSemipermanente: {
     servicio: "Gel semipermanente rubber",
@@ -48,13 +48,13 @@ const textos = {
   pedicuraSpa: {
     servicio: "Pedicura Spa con gel",
     descripcion: "Des",
-    precio: "$300"
+    precio: "$380"
   },
   pedicuraAdvance: {
     servicio: "Pedicura Advance",
     descripcion: "Des",
-    precio: "$300"
+    precio: "$450"
   }
 }
 
-export { textos };
+export { serviciosOfrecidos as textos };
