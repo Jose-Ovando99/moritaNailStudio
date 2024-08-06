@@ -35,10 +35,10 @@ function Services() {
       <section className="bg-pink-300 p-5 flex flex-col items-center justify-center font-raleway  text-slate-900">
         <p className="text-3xl font-bold">{servicio}</p>
         <img src={imagenPrueba} className="w-72" />
-        <p className="text-justify my-4">{descripcion}</p>
-        <div className="flex flex-row">
+        <p className="text-justify my-4 ">{descripcion}</p>
+        <div className="flex flex-row border-2 rounded-full p-2 bg-purple-700 border-purple-700 text-slate-200">
           <IconHeartFilled />
-          <p className="border-2 rounded-full p-2 bg-purple-700 border-purple-700 text-slate-200">{precio}</p>
+          <p>{precio}</p>
         </div>
       </section>
     </div>
