@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import img1 from "../assets/moritaCover.jpg";
-import img2 from "../assets/pr1.png";
+import img2 from "../assets/moritaStudioFront.jpg";
 import img3 from "../assets/test-2.jpg";
 
 const images = [
@@ -22,7 +22,7 @@ function Hero() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="relative overflow-hidden w-full h-72">
+      <div className="relative overflow-hidden w-full h-64">
         <div
           className="flex transition-transform duration-1000"
           style={{ transform: `translateX(-${imgActual * 100}%)` }}
@@ -36,9 +36,9 @@ function Hero() {
           ))}
         </div>
       </div>
-      <div className="px-8">
-        <p className="text-center text-2xl font-raleway font-bold">Morita Nail Studio</p>
-        <p className="font-raleway text-justify ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit totam blanditiis iste exercitationem temporibus minus natus dignissimos aliquam minima eveniet sint nam repellat, perspiciatis, non dicta magnam. Quas, distinctio esse?</p>
+      <div className="px-8 bg-[#fec7d7] text-[#0e172c]">
+        <p className="text-center text-2xl font-raleway font-bold my-4">Morita Nail Studio</p>
+        <p className="font-raleway text-justify mb-4">En Morita Nail Studio, nos especializamos en manicuras y pedicuras detalladas, extensiones de uñas, decoraciones personalizadas y tratamientos de cuidado profundo. Utilizamos productos de alta calidad y técnicas avanzadas para asegurar que cada diseño no solo sea hermoso, sino también duradero y de excelente calidad.</p>
       </div>
     </div>
   );
