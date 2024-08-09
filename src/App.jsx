@@ -18,13 +18,13 @@ function App() {
       <Hero />
       <MoreInfo />
       <Services />
-      <div className="w-full py-8 bg-[#fec7d7]">
+      <div className="w-full py-8 bg-[#faeee7]">
         <p className="px-8 text-center">Descubre mis creaciones más recientes y sumérgete en el arte de las uñas. Desde elegantes diseños clásicos hasta atrevidas tendencias, cada trabajo refleja mi pasión y dedicación.<br />¡Inspírate y encuentra el estilo perfecto para ti!
         </p>
       </div>
       <Gallery />
-      <a className="text-center flex flex-row text-xl justify-center items-center my-8" href="http://wa.me/529221057349" target="_Blank">
-        <div className="flex flex-row rounded-full py-2 bg-[#0e172c] text-zinc-50 px-4">
+      <a className="text-center flex flex-row text-xl justify-center items-center my-16" href="http://wa.me/529221057349" target="_Blank">
+        <div className="flex flex-row rounded-full py-2 bg-[#1e5950] text-zinc-50 px-4">
           <IconBrandWhatsapp size={30} color={"#25d366"} />
           <p>Agendar Cita</p>
         </div>

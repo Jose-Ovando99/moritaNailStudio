@@ -18,7 +18,7 @@ function Footer() {
           </a>         
         </div>
       </div>
-      <footer className="bg-[#fec7d7] p-8 text-center">
+      <footer className="bg-[#faeee7] p-8 text-center">
         Copyright © 2024 Morita Nail Studio - Todos los derechos reservados.
       </footer>
     </div>

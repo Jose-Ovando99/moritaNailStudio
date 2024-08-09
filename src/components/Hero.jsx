@@ -22,7 +22,7 @@ function Hero() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="relative overflow-hidden w-full h-64">
+      <div className="relative overflow-hidden w-full h-56">
         <div
           className="flex transition-transform duration-1000"
           style={{ transform: `translateX(-${imgActual * 100}%)` }}
@@ -36,9 +36,10 @@ function Hero() {
           ))}
         </div>
       </div>
-      <div className="px-8 bg-[#fec7d7] text-[#0e172c]">
+      <div className="px-8 bg-[#faeee7] text-[#0e172c] text-justify">
         <p className="text-center text-2xl font-raleway font-bold my-4">Morita Nail Studio</p>
         <p className="font-raleway text-justify mb-4">En Morita Nail Studio, nos especializamos en manicuras y pedicuras detalladas, extensiones de uñas, decoraciones personalizadas y tratamientos de cuidado profundo. Utilizamos productos de alta calidad y técnicas avanzadas para asegurar que cada diseño no solo sea hermoso, sino también duradero y de excelente calidad.</p>
+        <p>Minatitlán, Veracruz, México.</p>
       </div>
     </div>
   );
